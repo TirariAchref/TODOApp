@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalenderFragment">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="8dp"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/taskrecyclerviewCalender"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:id="@+id/empty_viewCalender"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="No Task" />
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

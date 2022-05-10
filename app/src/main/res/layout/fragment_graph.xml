@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".graphFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="8dp"
+
+        android:gravity="center"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textTask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Graph" />
+        <com.androidplot.pie.PieChart
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            style="@style/APDefacto.Light"
+            android:id="@+id/pieChart"
+
+            ></com.androidplot.pie.PieChart>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="8dp"
+android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/ToDo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To Do"
+            android:textColor="@color/red"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.13" />
+        <TextView
+            android:id="@+id/InProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In Progress"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.13" />
+        <TextView
+            android:id="@+id/Done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/teal_200"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+
+            app:layout_constraintVertical_bias="0.13" />
+
+    </LinearLayout>
+        <TextView
+            android:id="@+id/Total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+
+            app:layout_constraintVertical_bias="0.13" />
+
+    </LinearLayout>
+
+
+</FrameLayout>
